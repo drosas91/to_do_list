@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ToDo List 01</string>
+    <string name="add.new.task">Agregar nueva tarea</string>
+    <string name="add.task.button.label">Agregar</string>
+    <string name="app.title">Lista de Tareas</string>
 </resources>
