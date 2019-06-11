@@ -8,9 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -62,6 +60,7 @@ class DashboardActivity : AppCompatActivity() {
 
     fun buttonClick(view: View) {
         val mintent = Intent(this@DashboardActivity, DashboardActivityNewEdit::class.java)
+        mintent.putExtra("element", (view as TextView).text)
         startActivity(mintent)
     }
 
@@ -85,8 +84,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: ViewHolder, p1: Int) {
-
-            holder.toDoName.text = "["+list[p1].id+"] | "+list[p1].nombre
+            holder.toDoName.text = ""+list[p1].id+"-"+list[p1].nombre
             /*holder.toDoName.text = list[p1].descripcion
             holder.toDoName.text = list[p1].nuevo.toString()
             holder.toDoName.text = list[p1].id.toString()*/

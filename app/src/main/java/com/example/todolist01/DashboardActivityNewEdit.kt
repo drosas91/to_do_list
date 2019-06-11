@@ -25,8 +25,8 @@ class DashboardActivityNewEdit : AppCompatActivity() {
         title = "Edición / Creación Tarea"
         dbHandler = DBHandler(this)
         rv_dashboard.layoutManager = LinearLayoutManager(this)
-
-
+        val element:Int = Integer.parseInt((this.intent.extras!!["element"] as String).split("-")[0])
+        print("El elemento que llego es id $element")
     }
 
     override fun onResume() {
