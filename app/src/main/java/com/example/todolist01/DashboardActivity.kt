@@ -25,7 +25,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
         setSupportActionBar(dashboard_toolbar)
-        title = "Lista de Tareas"
+        title = getString(R.string.app_title)
         dbHandler = DBHandler(this)
         rv_dashboard.layoutManager = LinearLayoutManager(this)
         fab_dashboard.setOnClickListener{
@@ -33,8 +33,8 @@ class DashboardActivity : AppCompatActivity() {
             val view = layoutInflater.inflate(R.layout.dialog_dashboard, null)
             val toDoName = view.findViewById<EditText>(R.id.ev_todo)
             dialog.setView(view)
-            dialog.setTitle("Agregar nueva tarea")
-            dialog.setPositiveButton("Agregar") { _: DialogInterface, _: Int ->
+            dialog.setTitle(getString(R.string.add_new_task))
+            dialog.setPositiveButton(getString(R.string.add_task_button_label)) { _: DialogInterface, _: Int ->
                 if (toDoName.text.isNotEmpty()){
                     val toDo = ToDo()
                     toDo.nombre = toDoName.text.toString()
