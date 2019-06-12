@@ -1,4 +1,4 @@
-package com.example.todolist01
+package com.example.todolist
 
 import android.content.Context
 import android.content.DialogInterface
@@ -12,7 +12,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todolist01.DTO.ToDo
+import com.example.todolist.DTO.ToDo
+import com.example.todolist01.R
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivityNewEdit : AppCompatActivity() {
@@ -25,7 +26,7 @@ class DashboardActivityNewEdit : AppCompatActivity() {
         title = "Edición / Creación Tarea"
         dbHandler = DBHandler(this)
         rv_dashboard.layoutManager = LinearLayoutManager(this)
-        val element:Int = Integer.parseInt((this.intent.extras!!["element"] as String).split("-")[0])
+        val element:Int = Integer.parseInt(this.intent.extras!!["element"] as String)
         print("El elemento que llego es id $element")
     }
 

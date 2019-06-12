@@ -1,4 +1,4 @@
-package com.example.todolist01.DTO
+package com.example.todolist.DTO
 
 class ToDo{
     var id: Long = -1
