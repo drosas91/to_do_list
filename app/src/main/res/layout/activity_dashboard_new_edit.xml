@@ -14,11 +14,39 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:background="@color/colorPrimaryDark"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <!--<androidx.recyclerview.widget.RecyclerView
             android:layout_below="@+id/dashboard_toolbar"
             android:id="@+id/rv_dashboard"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rv_dashboard_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+    >
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:hint="Nombre"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@+id/rv_dashboard_nombre"
+            android:id="@+id/rv_dashboard_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_below="@+id/rv_dashboard_nombre"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:hint="Descripción"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 

@@ -93,11 +93,11 @@ class DashboardActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    fun buttonClick(view: View) {
+    /*fun buttonClick(view: View) {
         val mintent = Intent(this@DashboardActivity, DashboardActivityNewEdit::class.java)
         mintent.putExtra("element", (view as TextView).text.split(": ")[0])
         startActivity(mintent)
-    }
+    }*/
 
     override fun onResume() {
         refreshList()
