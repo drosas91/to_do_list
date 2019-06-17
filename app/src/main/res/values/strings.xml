@@ -1,6 +1,22 @@
 <resources>
-    <string name="app_name">ToDo List 01</string>
+    <string name="app_name">ToDo List</string>
     <string name="add.new.task">Agregar nueva tarea</string>
     <string name="add.task.button.label">Agregar</string>
+    <string name="update.task">Actualizar tarea</string>
+    <string name="update.task.button.label">Actualizar</string>
     <string name="app.title">Lista de Tareas</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="finish">Finalizar</string>
+    <string name="reset">Reset</string>
+    <string name="input_task_name_hint">Nombre</string>
+    <string name="task_description_hint">Descripción</string>
+    <string name="empty.state.label">No existen tareas, presiona el botón + para crear una tarea</string>
+    <string name="description_input_hint">Descripción</string>
+    <string name="name_input_hint">Nombre</string>
+    <string name="error_input_fields_empty">Los campos Nombre y Descripción no pueden estar vacíos</string>
+    <string name="error_input_name_empty">El campo Nombre se encuentra vacío</string>
+    <string name="error_input_description_empty">El campo Descripción se encuentra vacío</string>
+    <string name="edit_title">Editar Tarea</string>
+    <string name="create_title">Crear Tarea</string>
 </resources>
