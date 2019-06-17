@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.to_do_list.DashboardActivityNewEdit">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dashboard_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorPrimaryDark"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_task_name_layout"
+            android:layout_below="@+id/dashboard_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+    >
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_task_name"
+                android:layout_below="@+id/dashboard_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/name_input_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_description_layout"
+            android:layout_below="@+id/input_task_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_task_description"
+                android:layout_below="@+id/input_task_name"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/description_input_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/plus"
+            android:layout_margin="36dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginEnd="62dp" android:layout_marginBottom="0dp" android:layout_marginRight="62dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/check"
+            android:layout_margin="36dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTintMode="add"
+            android:layout_marginRight="62dp"/>
+
+
+</RelativeLayout>
